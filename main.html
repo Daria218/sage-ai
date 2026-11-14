@@ -4,78 +4,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Головна | Sage AI</title>
-
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 <header id="top">
 <nav aria-label="Основна навігація">
-
-<a class="logo" href="index.html">Sage AI</a>
+<a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип Sage AI">Sage AI</a>
 <a href="index.html" aria-current="page">Головна</a>
 <a href="pricing.html">Тарифи</a>
-<a href="register.html">Реєстрація</a>
+<a href="#features">Можливості</a>
+<a href="#demo">Демо</a>
+<a href="#reviews">Відгуки</a>
+<a href="#">Блог</a>
+<a class="btn alt small" href="login.html">Увійти</a>
+<a class="btn small" href="register.html">Спробувати</a>
 </nav>
 </header>
 
 <main>
 <section class="hero" aria-labelledby="h-hero">
 <div>
-<h1 id="h-hero">Один помічник для всіх ваших задач</h1>
+<h1 id="h-hero">Один помічник <span class="accent">для всіх ваших задач</span></h1>
 <p>Тексти, пошук, переклад, аналіз документів і ідеї в одному місці.</p>
 <a class="btn" href="register.html">Спробувати безкоштовно</a>
-<a class="btn alt" href="pricing.html">Дивитись тарифи</a>
+<a class="btn alt" href="#demo">Дивитись демо</a>
 </div>
 <div class="map">
-
+<img src="img/hero.svg" width="220" height="330" alt="Приклад чату з Sage AI" usemap="#heromap">
+<map name="heromap">
+<area shape="rect" coords="22,268,198,306" href="register.html" alt="Почати чат">
+<area shape="rect" coords="16,108,120,212" href="pricing.html" alt="Дивитись тарифи">
+</map>
 </div>
 </section>
 
-<section aria-labelledby="h-feat">
+<section id="features" aria-labelledby="h-feat">
 <h2 id="h-feat">Можливості</h2>
-<div class="grid">
-<article class="card">
-
-<h3>Тексти</h3>
-<ul><li>Писати</li><li>Редагувати</li></ul>
-</article>
-<article class="card">
-
-<h3>Переклад</h3>
-<ul><li>Понад 40 мов</li><li>З урахуванням стилю</li></ul>
-</article>
-<article class="card">
-
-<h3>Аналіз</h3>
-<ul><li>Документи</li><li>Файли</li></ul>
-</article>
+<div class="grid features">
+<article class="card"><h3><img src="img/icon-text.svg" alt="">Тексти</h3><p>Писати і редагувати</p></article>
+<article class="card"><h3><img src="img/icon-answers.svg" alt="">Відповіді</h3><p>На будь-які питання</p></article>
+<article class="card"><h3><img src="img/icon-translate.svg" alt="">Переклад</h3><p>Понад 40 мов</p></article>
+<article class="card"><h3><img src="img/icon-analysis.svg" alt="">Аналіз</h3><p>Документів і файлів</p></article>
+<article class="card"><h3><img src="img/icon-ideas.svg" alt="">Ідеї</h3><p>Мозковий штурм</p></article>
+<article class="card"><h3><img src="img/icon-code.svg" alt="">Код і таблиці</h3><p>Допомога з формулами</p></article>
 </div>
 </section>
 
-<section class="how" aria-labelledby="h-how">
-<h2 id="h-how">Як це працює</h2>
-<ol>
-<li>Напишіть запитання.</li>
-<li>Отримайте відповідь.</li>
-<li>Уточніть, якщо потрібно.</li>
-</ol>
+<section id="demo" class="demo" aria-labelledby="h-demo">
+<h2 id="h-demo">Запитай <strong>Sage</strong></h2>
+<form class="ask" action="#" method="get">
+<input name="q" type="search" placeholder="Введи тему, наприклад «аналітика»..." aria-label="Тема запиту">
+<button class="btn" type="submit">Запитати</button>
+</form>
+<div class="result">
+<div class="ph" aria-hidden="true">Фото</div>
+<div><h3>Аналітика даних</h3><p>Короткий опис...</p></div>
+</div>
 </section>
 
-<section class="about" aria-labelledby="h-about">
-<h2 id="h-about">Про Sage AI</h2>
-
-<p>Sage AI допомагає студентам, фахівцям і підприємцям швидше працювати з текстом та інформацією. Це вигаданий продукт для навчального проєкту.</p>
+<section id="reviews" class="reviews" aria-labelledby="h-rev">
+<h2 id="h-rev">Відгуки</h2>
+<div class="grid">
+<article class="card"><h3>Марія</h3><p>«Заощадила купу часу»</p></article>
+<article class="card"><h3>Андрій</h3><p>«Все працює бездоганно»</p></article>
+<article class="card"><h3>Анна</h3><p>«Хороший ШІ-помічник»</p></article>
+</div>
 </section>
 
-<section aria-labelledby="h-faq">
-<h2 id="h-faq">Часті запитання</h2>
-<details><summary>Це безкоштовно?</summary><p>Так, тариф Free безкоштовний.</p></details>
+<section id="faq" aria-labelledby="h-faq">
+<h2 id="h-faq">FAQ</h2>
 <details><summary>Чи конфіденційні мої дані?</summary><p>Ми не передаємо дані третім особам.</p></details>
+<details><summary>Це безкоштовно?</summary><p>Так, тариф Free безкоштовний.</p></details>
 <details><summary>Які мови підтримуються?</summary><p>Українська, англійська та понад 40 інших.</p></details>
+</section>
+
+<section class="cta" aria-label="Заклик до дії">
+<a class="btn" href="register.html">Почни працювати з Sage AI</a>
 </section>
 </main>
 
 <footer>
-<p>&copy; 2026 Sage AI. Навчальний проєкт.</p>
+<span class="lang">UA / EN</span>
+<p>Sage AI &middot; Розділи &middot; Контакти &middot; Соцмережі</p>
 </footer>
 <a class="up" href="#top" aria-label="Нагору">&uarr;</a>
 </body>
