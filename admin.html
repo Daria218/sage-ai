@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Адмін-панель | Sage AI</title>
+
+</head>
+<body class="admin">
+<aside aria-label="Меню адміністратора">
+
+<p class="logo">Sage AI</p>
+<nav aria-label="Розділи адмін-панелі">
+<a href="admin.html" aria-current="page">Користувачі</a>
+<a href="#">Відгуки</a>
+<a href="#">Статті</a>
+<a href="#">Статистика</a>
+</nav>
+</aside>
+
+<main>
+<h1>Користувачі</h1>
+
+<section aria-label="Статистика">
+<ul class="stats">
+<li><strong>128</strong> користувачів</li>
+<li><strong>42</strong> запити до демо</li>
+<li><strong>31</strong> відгук</li>
+<li><strong>4,6</strong> середній рейтинг</li>
+</ul>
+</section>
+
+<section aria-labelledby="h-users">
+<h2 id="h-users">Список користувачів</h2>
+<form action="#" method="get" class="filters">
+<input name="q" type="search" placeholder="Пошук..." aria-label="Пошук користувачів">
+<select name="filter" aria-label="Фільтр">
+<option>Фільтр: усі</option>
+<option>Активні</option>
+<option>Заблоковані</option>
+</select>
+</form>
+<table>
+<caption>Користувачі сайту</caption>
+<thead>
+<tr><th scope="col">Ім'я</th><th scope="col">Email</th><th scope="col">Роль</th><th scope="col">Статус</th><th scope="col">Дії</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Анна</td>
+<td>a@gmail.com</td>
+<td>user</td>
+<td data-status="active">активний</td>
+<td><button type="button">Видалити</button> <button type="button" class="danger">Заблокувати</button></td>
+</tr>
+</tbody>
+</table>
+</section>
+</main>
+</body>
+</html>
