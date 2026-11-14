@@ -4,27 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Реєстрація | Sage AI</title>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header id="top">
 <nav aria-label="Основна навігація">
-
-<a class="logo" href="index.html">Sage AI</a>
+<a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип Sage AI">Sage AI</a>
 <a href="main.html">Головна</a>
 <a href="pricing.html">Тарифи</a>
-<a href="register.html" aria-current="page">Реєстрація</a>
+<a class="btn alt small" href="login.html">Увійти</a>
+<a class="btn small" href="register.html">Спробувати</a>
 </nav>
 </header>
-
 <main>
-<section class="auth-card" aria-labelledby="h-reg">
-<h2 id="h-reg">Реєстрація</h2>
+<section class="auth-card" aria-labelledby="h-a">
+<h2 id="h-a">Реєстрація</h2>
 <form action="#" method="post">
-<input name="name" type="text" placeholder="Ім'я..." aria-label="Ім'я" required minlength="2" autocomplete="name">
+<input name="name" type="text" placeholder="Ім'я..." aria-label="Ім'я" required autocomplete="name">
 <input name="email" type="email" placeholder="Емейл..." aria-label="Емейл" required autocomplete="email">
-<input name="pass" type="password" placeholder="Пароль..." aria-label="Пароль" required minlength="8" autocomplete="new-password">
-<input name="pass2" type="password" placeholder="Повторити пароль..." aria-label="Повторити пароль" required minlength="8" autocomplete="new-password">
+<input name="pass" type="password" placeholder="Пароль..." aria-label="Пароль" required autocomplete="new-password">
+<input name="pass2" type="password" placeholder="Повторити пароль..." aria-label="Повторити пароль" required autocomplete="new-password">
 <div class="actions">
 <a class="btn alt" href="index.html">Назад</a>
 <button class="btn" type="submit">Зареєструватися</button>
@@ -32,8 +31,8 @@
 </form>
 </section>
 </main>
-
 <footer>
+<span class="lang">UA / EN</span>
 <p>&copy; 2026 Sage AI. Навчальний проєкт.</p>
 </footer>
 <a class="up" href="#top" aria-label="Нагору">&uarr;</a>

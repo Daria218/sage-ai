@@ -4,31 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Тарифи | Sage AI</title>
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header id="top">
 <nav aria-label="Основна навігація">
-
-<a class="logo" href="index.html">Sage AI</a>
-<a href="index.html">Головна</a>
+<a class="logo" href="main.html"><img src="img/logo.svg" alt="Логотип Sage AI">Sage AI</a>
+<a href="main.html">Головна</a>
 <a href="pricing.html" aria-current="page">Тарифи</a>
-<a href="register.html">Реєстрація</a>
+<a class="btn alt small" href="login.html">Увійти</a>
+<a class="btn small" href="register.html">Спробувати</a>
 </nav>
 </header>
-
 <main>
 <section aria-labelledby="h-pr">
 <h2 id="h-pr">Тарифи</h2>
 <table>
 <caption>Порівняння тарифів Sage AI</caption>
 <thead>
-<tr>
-<th scope="col">Можливість</th>
-<th scope="col">Free</th>
-<th scope="col" class="pop">Plus<span class="badge">Популярний</span></th>
-<th scope="col">Business</th>
-</tr>
+<tr><th scope="col">Можливість</th><th scope="col">Free</th><th scope="col" class="pop">Plus</th><th scope="col">Business</th></tr>
 </thead>
 <tbody>
 <tr><th scope="row">Ціна на місяць</th><td>0 грн</td><td data-plan="plus">199 грн</td><td>599 грн</td></tr>
@@ -36,17 +30,33 @@
 <tr><th scope="row">Завантаження файлів</th><td>ні</td><td data-plan="plus">до 5 МБ</td><td>до 50 МБ</td></tr>
 </tbody>
 </table>
-
+<h3>Як оформити тариф</h3>
+<ol class="notes">
+<li>Зареєструйтеся на сайті.</li>
+<li>Оберіть тариф у кабінеті.</li>
+<li>Оплатіть картою.</li>
+</ol>
 <ul class="notes">
 <li>Оплата щомісяця, скасувати можна будь-коли.</li>
 <li>Студентам знижка 20% за запитом.</li>
 </ul>
-
-<p><a class="btn" href="register.html">Обрати тариф</a></p>
+<p><a class="btn" href="#plans">Обрати тариф</a></p>
 </section>
+<div class="modal" id="plans" role="dialog" aria-modal="true" aria-labelledby="h-plans">
+<a class="backdrop" href="#" aria-label="Закрити вікно"></a>
+<div class="modal-box">
+<a class="close" href="#" aria-label="Закрити">&times;</a>
+<h2 id="h-plans">Оберіть тариф</h2>
+<div class="grid">
+<article class="card tariff"><h3>Free</h3><p class="price"><strong>0</strong><br>грн/міс.</p><a class="btn b-blue" href="register.html?plan=free">Обрати</a></article>
+<article class="card tariff"><span class="badge">Популярний</span><h3>Plus</h3><p class="price"><strong>199</strong><br>грн/міс.</p><a class="btn b-pink" href="register.html?plan=plus">Обрати</a></article>
+<article class="card tariff"><h3>Business</h3><p class="price"><strong>599</strong><br>грн/міс.</p><a class="btn b-lav" href="register.html?plan=business">Обрати</a></article>
+</div>
+</div>
+</div>
 </main>
-
 <footer>
+<span class="lang">UA / EN</span>
 <p>&copy; 2026 Sage AI. Навчальний проєкт.</p>
 </footer>
 <a class="up" href="#top" aria-label="Нагору">&uarr;</a>
